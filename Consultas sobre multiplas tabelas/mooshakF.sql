@@ -1,0 +1,15 @@
+SELECT 
+DISTINCT
+CUSTOMER.Name AS Name
+FROM
+STREAM, CUSTOMER, MOVIE
+WHERE 
+STREAM.CustomerId = CUSTOMER.CustomerId 
+AND
+MOVIE.MovieId = STREAM.MovieId 
+AND 
+HOUR(StreamDate) >= 20 
+AND
+Duration >= 180
+ORDER BY
+Name; 

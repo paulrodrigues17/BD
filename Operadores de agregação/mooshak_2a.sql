@@ -1,0 +1,2 @@
+SELECT COUNT(*) AS Num_Depart FROM DEPARTMENT;
+

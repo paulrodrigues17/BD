@@ -1,0 +1,1 @@
+SELECT MIN(Charge) AS MIN, MAX(Charge) AS MAX, AVG(Charge) AS MEDIA, SUM(Charge) AS SUM FROM STREAM WHERE Year(StreamDate)=2017;

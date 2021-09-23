@@ -1,0 +1,2 @@
+SELECT CustomerId, SUM(Charge) AS N FROM STREAM GROUP BY CustomerId HAVING N<100 ORDER BY N DESC, CustomerId;
+

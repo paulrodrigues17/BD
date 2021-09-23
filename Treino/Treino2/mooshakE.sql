@@ -1,0 +1,6 @@
+SELECT C.Name, COUNT(StreamId) AS N
+FROM CUSTOMER C LEFT OUTER JOIN STREAM USING (CustomerId)
+WHERE 
+C.Country = 'India'
+GROUP BY C.Name
+HAVING N < 5;

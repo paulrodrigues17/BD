@@ -1,0 +1,13 @@
+SELECT
+Title, COUNT(StreamId) AS N
+FROM MOVIE LEFT OUTER JOIN STREAM
+ON 
+(
+    MOVIE.MovieId = STREAM.MovieId
+)
+WHERE 
+MOVIE.Year = 2015
+GROUP BY 
+Title
+HAVING 
+N <= 5;

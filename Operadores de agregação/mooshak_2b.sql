@@ -1,0 +1,2 @@
+SELECT AVG(Duration) AS Media FROM MOVIE WHERE Year>=2000;
+
